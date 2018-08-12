@@ -16,7 +16,9 @@ namespace Calculator.ConsoleApplication
             Console.Write("Enter second number: ");
             double secondNumber = Convert.ToDouble(Console.ReadLine());
             Addition(firstNumber, secondNumber);
+            Subtraction(firstNumber, secondNumber);
             Console.WriteLine("--------------");
+            Console.ReadKey();
         }
 
         static void Addition(double firstNumber, double secondNumber)
@@ -25,7 +27,13 @@ namespace Calculator.ConsoleApplication
             Console.WriteLine($"Addition of numbers: { sum }");
         }
 
-        // sdsfdg stgert
+        // Durga Subtraction code
+
+        static void Subtraction(double firstNumber, double secondNumber)
+        {
+            double subtract = firstNumber - secondNumber;
+            Console.WriteLine("Subtraction of Numbers: {0}", subtract);                
+        }
     }
 
     
