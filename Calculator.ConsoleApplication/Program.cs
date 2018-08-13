@@ -17,6 +17,7 @@ namespace Calculator.ConsoleApplication
             double secondNumber = Convert.ToDouble(Console.ReadLine());
             Addition(firstNumber, secondNumber);
             Subtraction(firstNumber, secondNumber);
+            Multiplication(firstNumber, secondNumber);
             Console.WriteLine("--------------");
             Console.ReadKey();
         }
@@ -33,6 +34,14 @@ namespace Calculator.ConsoleApplication
         {
             double subtract = firstNumber - secondNumber;
             Console.WriteLine("Subtraction of Numbers: {0}", subtract);                
+        }
+
+        // Durga Multiplication code 
+
+        static void Multiplication(double firstNumber, double secondNumber)
+        {
+            double Multiplier = firstNumber * secondNumber;
+            Console.WriteLine("Multiplication of Numbers: {0}", Multiplier);
         }
     }
 
