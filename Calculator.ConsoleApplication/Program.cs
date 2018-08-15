@@ -41,7 +41,13 @@ namespace Calculator.ConsoleApplication
         static void Multiplication(double firstNumber, double secondNumber)
         {
             double Multiplier = firstNumber * secondNumber;
-            Console.WriteLine("Multiplication of Numbers: {0}", Multiplier);
+
+            //string result = String.Format("{0:0}", Multiplier);               
+            //Console.WriteLine("Multiplication of Numbers: {0}", result);
+
+            //Console.WriteLine($"Multiplication of Numbers: {Multiplier:0}");
+
+            Console.WriteLine("Multiplication of Numbers: {0}", Multiplier.ToString("0"));
         }
     }
 
