@@ -7,7 +7,7 @@ namespace Calculator.ConsoleApplication
     {
         static MathOperations()
         {
-            Console.WriteLine("--- In Static Class ---");
+            Console.WriteLine("--- In Static Class ---\n");
         }
 
         internal static void Addition(double firstNumber, double secondNumber)
