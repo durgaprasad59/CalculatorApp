@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Calculator.ConsoleApplication
 {
     using NonStaticMathOperation;
+    using StaticMathOperations;
     class Program
     {
         static void Main(string[] args)
@@ -55,6 +56,8 @@ namespace Calculator.ConsoleApplication
             MyLibrary.division(firstNumber, secondNumber);
             MyLibrary.Reminder(firstNumber, secondNumber);
 
+           
+           
             Console.WriteLine("\nPress any key to continue....................");
             Console.ReadKey();
         }
