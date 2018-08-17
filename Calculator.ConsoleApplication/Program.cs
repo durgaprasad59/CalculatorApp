@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NonStaticMathOperation;
+using StaticMathOperations;
 
 namespace Calculator.ConsoleApplication
 {
-    using NonStaticMathOperation;
-    using StaticMathOperations;
+    
     class Program
     {
         static void Main(string[] args)
@@ -44,7 +45,7 @@ namespace Calculator.ConsoleApplication
 
             Console.WriteLine("\nPress any key to continue....................");*/
 
-            // Durga Program code------------------------------------
+            // Durga Program code ---------------------------------------
 
             Console.WriteLine("\n--------------Durga Math Operations Using Class Library---------------------\n");
 
@@ -56,7 +57,7 @@ namespace Calculator.ConsoleApplication
             MyLibrary.division(firstNumber, secondNumber);
             MyLibrary.Reminder(firstNumber, secondNumber);
 
-           
+            
            
             Console.WriteLine("\nPress any key to continue....................");
             Console.ReadKey();
