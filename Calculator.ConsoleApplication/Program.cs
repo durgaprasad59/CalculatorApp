@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Calculator.ConsoleApplication
 {
+    using NonStaticMathOperation;
     class Program
     {
         static void Main(string[] args)
@@ -14,7 +19,7 @@ namespace Calculator.ConsoleApplication
 
             // Avinash Program code------------------------------------
 
-            Console.WriteLine("\n--------------Avinash Math Operations---------------------");
+            /*Console.WriteLine("\n--------------Avinash Math Operations---------------------");
 
             MathOperations.Addition(firstNumber, secondNumber);
             MathOperations.Subtraction(firstNumber, secondNumber);
@@ -35,6 +40,20 @@ namespace Calculator.ConsoleApplication
             mathoperations.multiplication(firstNumber, secondNumber);
             mathoperations.division(firstNumber, secondNumber);
             mathoperations.Reminder(firstNumber, secondNumber);
+
+            Console.WriteLine("\nPress any key to continue....................");*/
+
+            // Durga Program code------------------------------------
+
+            Console.WriteLine("\n--------------Durga Math Operations Using Class Library---------------------\n");
+
+            MyMathLibrary MyLibrary = new MyMathLibrary();
+
+            MyLibrary.addition(firstNumber, secondNumber);
+            MyLibrary.subtraction(firstNumber, secondNumber);
+            MyLibrary.multiplication(firstNumber, secondNumber);
+            MyLibrary.division(firstNumber, secondNumber);
+            MyLibrary.Reminder(firstNumber, secondNumber);
 
             Console.WriteLine("\nPress any key to continue....................");
             Console.ReadKey();
